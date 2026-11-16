@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frank Edouard Peterlee | Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/thepeet-DQ3K3YPt.jpg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Orbitron', 'sans-serif'],
+          },
+          colors: {
+            primary: '#0ea5e9',
+            neon: '#22d3ee',
+            dark: '#0f172a',
+          },
+          boxShadow: {
+            'neon': '0 0 5px theme("colors.neon"), 0 0 20px theme("colors.neon")',
+            'neon-strong': '0 0 10px theme("colors.neon"), 0 0 40px theme("colors.neon")',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @keyframes pulse-neon {
+
+      0%,
+      100% {
+        opacity: 1;
+        text-shadow: 0 0 5px #22d3ee, 0 0 10px #22d3ee;
+      }
+
+      50% {
+        opacity: 0.8;
+        text-shadow: 0 0 2px #22d3ee, 0 0 5px #22d3ee;
+      }
+    }
+
+    .neon-text {
+      animation: pulse-neon 2s infinite;
+    }
+
+    .glass {
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+
+  <link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-D0LIZq0a.js"></script>
+</head>
+
+<body class="bg-dark text-slate-200 selection:bg-neon selection:text-dark">
+  <div id="root"></div>
+</body>
+
+</html>
